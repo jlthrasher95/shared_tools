@@ -15,7 +15,7 @@ class Session():
         """
         self.running = True
         self.key = None
-        self.key_value = None
+        self.key_data = None
         self.target_file = file_name
         try:
             with open(file_name) as file_object:
