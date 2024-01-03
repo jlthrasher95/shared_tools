@@ -48,3 +48,4 @@ class Session():
     def key_input(self, prompt):
         reply = tool.caseless_input(prompt)
         self.quit_check(reply)
+        return reply
