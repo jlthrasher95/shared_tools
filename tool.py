@@ -31,11 +31,10 @@ def run_selection(selection, options_dict):
     options and runs the corresponding function, or else notifies the
     user that the selection was invalid.
     """
-    selection_validated = False
     for key_tuple in options_dict.keys():
         for subkey in key_tuple:
             if selection == subkey:
                 options_dict[key_tuple]()
-                selection_validated = True
-    if not selection_validated:
-        print('Invalid selection.')
+                return True
+    print('Invalid selection.')
+    return False
