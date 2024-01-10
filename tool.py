@@ -36,3 +36,11 @@ def run_selection(selection, options_dict):
                 return True
     print('Invalid selection.')
     return False
+
+
+def for_writelines(list):
+    """This function formats a list for writelines()."""
+    lines = []
+    for item in list:
+        lines.append(str(item) + '\n')
+    return lines
